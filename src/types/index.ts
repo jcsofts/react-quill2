@@ -1,7 +1,6 @@
 import { QuillOptions } from 'quill';
 
 export interface ReactQuillProps {
-  id?:string;
   value?: string;
   defaultValue?: string;
   onChange?: (content: string) => void;

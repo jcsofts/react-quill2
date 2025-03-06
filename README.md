@@ -5,15 +5,15 @@ A React wrapper for Quill 2.0 rich text editor.
 ## Installation
 
 ```bash
-npm install react-quill2
+npm install react-quill-ver2
 # or
-yarn add react-quill2
+yarn add react-quill-ver2
 ```
 
 ## Usage
 
 ```tsx
-import { ReactQuill } from 'react-quill2';
+import { ReactQuill } from 'react-quill-ver2';
 import 'quill/dist/quill.snow.css';
 
 function App() {

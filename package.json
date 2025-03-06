@@ -1,7 +1,7 @@
 {
-  "name": "react-quill2",
-  "version": "1.0.0",
-  "description": "React wrapper for Quill 2.0",
+  "name": "react-quill-ver2",
+  "version": "2.0.1",
+  "description": "React Quill editor for Quill 2.0",
   "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -25,6 +25,7 @@
     "quill": "^2.0.0"
   },
   "devDependencies": {
+    "@types/node": "^22.13.9",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
     "@typescript-eslint/eslint-plugin": "^6.0.0",

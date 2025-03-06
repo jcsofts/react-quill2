@@ -1,6 +1,8 @@
 import 'highlight.js/styles/github.css';
 import Quill, { QuillOptions } from 'quill';
 import 'quill/dist/quill.snow.css';
+import 'quill/dist/quill.bubble.css';
+
 import { useEffect, useRef, forwardRef, useImperativeHandle } from 'react';
 import { ReactQuillProps } from '../types';
 import hljs from 'highlight.js';

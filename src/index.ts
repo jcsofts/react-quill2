@@ -1,2 +1,6 @@
-export { default as ReactQuill } from './components/ReactQuill';
-export type { ReactQuillProps } from './types'; 
+import Quill from 'quill';
+import ReactQuill from './components/ReactQuill';
+import type { ReactQuillProps } from './types';
+export default ReactQuill;
+export type { ReactQuillProps };
+export { Quill };

@@ -1,6 +1,6 @@
 {
   "name": "react-quill-ver2",
-  "version": "2.0.1",
+  "version": "2.0.6",
   "description": "React Quill editor for Quill 2.0",
   "type": "module",
   "main": "dist/index.js",
@@ -11,31 +11,29 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsup src/index.ts --format esm,cjs --dts --external react,react-dom,quill,@emoji-mart/react,@emoji-mart/data,highlight.js",
     "preview": "vite preview",
-    "test": "vitest",
-    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
+    "v:patch": "npm version --no-git-tag-version patch",
+    "v:minor": "npm version --no-git-tag-version minor"
   },
   "peerDependencies": {
-    "react": "^17.2.0 || ^18.0.0 || ^19.0.0",
-    "react-dom": "^17.2.0 || ^18.0.0 || ^19.0.0"
+    "quill": "^2.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   },
   "dependencies": {
-    "highlight.js": "^11.11.1",
+    "@emoji-mart/data": "^1.1.1",
+    "@emoji-mart/react": "^1.1.1",
+    "highlight.js": "^11.9.0",
     "quill": "^2.0.0"
   },
   "devDependencies": {
-    "@types/node": "^22.13.9",
-    "@types/react": "^18.2.0",
-    "@types/react-dom": "^18.2.0",
-    "@typescript-eslint/eslint-plugin": "^6.0.0",
-    "@typescript-eslint/parser": "^6.0.0",
-    "@vitejs/plugin-react": "^4.0.0",
-    "eslint": "^8.0.0",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.0",
-    "typescript": "^5.0.0",
-    "vite": "^5.0.0",
-    "vitest": "^1.0.0"
+    "@types/node": "^20.11.19",
+    "@types/react": "^18.2.57",
+    "@types/react-dom": "^18.2.19",
+    "@vitejs/plugin-react": "^4.2.1",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.2",
+    "vite": "^6.2.0"
   }
 }

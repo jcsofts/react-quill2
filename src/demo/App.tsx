@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ReactQuill } from '../index';
+import ReactQuill from '../index';
 
 const App: React.FC = () => {
   const [value, setValue] = useState('');

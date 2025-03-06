@@ -1,6 +1,6 @@
 import { QuillOptions } from 'quill';
 
-export type ReactQuillProps = {
+export interface ReactQuillProps {
   value?: string;
   defaultValue?: string;
   onChange?: (content: string) => void;

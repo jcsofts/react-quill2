@@ -1,6 +1,6 @@
 {
   "name": "react-quill-ver2",
-  "version": "2.0.6",
+  "version": "2.0.8",
   "description": "React Quill editor for Quill 2.0",
   "type": "module",
   "main": "dist/index.js",
@@ -35,5 +35,10 @@
     "tsup": "^8.4.0",
     "typescript": "^5.8.2",
     "vite": "^6.2.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jcsofts/react-quill2"
+  },
+  "homepage": "https://github.com/jcsofts/react-quill2#readme"
 }

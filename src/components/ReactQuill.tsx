@@ -43,12 +43,13 @@ const ReactQuill = forwardRef<ReactQuillRef, ReactQuillProps>(({
         toolbar: modules?.toolbar || {container:"#quill-toolbar"},
       },
       formats: formats || [
-        'header', 'font', 'size',
-        'bold', 'italic', 'underline', 'strike',
-        'color', 'background',
-        'list', 'indent',
-        'link', 'image', 'video', 'align', 'direction',
-        'script'
+        'background','bold','color', 
+        'font', 'code','italic', 
+        'link','size','strike','script',
+        'underline', 'blockquote','header', 
+        'indent','list', 'align', 'direction',
+        'code-block','formula',
+        'image', 'video'
       ],
       placeholder,
       readOnly,

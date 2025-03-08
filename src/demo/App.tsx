@@ -1,8 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ReactQuill from '../index';
 
 const App: React.FC = () => {
-  const [value, setValue] = useState('');
+  const [value, setValue] = useState(localStorage.getItem('quill-content'));
+
+  // Load content from localStorage when component mounts
+  useEffect(() => {
+    const savedContent = localStorage.getItem('quill-content');
+    if (savedContent) {
+      setValue(savedContent);
+    }
+  }, []);
+
+  // Save content to localStorage whenever it changes
+  const handleChange = (content: string) => {
+    setValue(content);
+    localStorage.setItem('quill-content', content);
+  };
 
   const modules = {
     toolbar: {
@@ -98,7 +112,7 @@ const App: React.FC = () => {
           </div>
           <ReactQuill
             value={value}
-            onChange={setValue}
+            onChange={handleChange}
             modules={modules}
             placeholder="Start writing..."
             style={{ height: '300px', marginBottom: '50px' }}
